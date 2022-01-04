@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/logocut.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Pellerin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_VivgxQMSzDYwlSSFIggUE");
+})();
+</script>
+</head>
+<body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+        <nav>
+            <figure>
+              <img id="personal-logo" class="" src="./assets/logocut.png" alt="">
+            </figure>
+            <ul class="nav__link--list">
+              <li class="nav__link" onclick="toggleModal()">
+                <a href="#" class="
+                  nav__link--anchor
+                  link__hover-effect
+                  link__hover-effect--black
+                ">About</a>
+              </li>
+              <li class="nav__link">
+                <a href="#projects" class="
+                  nav__link--anchor
+                  link__hover-effect
+                  link__hover-effect--black
+                ">Projects</a>
+              </li>
+              <li class="nav__link" onclick="toggleModal()">
+                <a href="#" class="
+                  nav__link--anchor
+                  link__hover-effect
+                  link__hover-effect--black
+                ">Contact</a>
+              </li>
+              <li class="nav__link click" onclick="toggleContrast()">
+                <a href="#" class="
+                  nav__link--anchor
+                "><i class="fas fa-adjust"></i></a>
+              </li>
+            </ul>
+          </nav>
+          <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hello,</h1>
+                <h1 class="title title--secondary"><span class="text--color"> I'm Joseph.</span></h1>
+                <p class="header__para">I'm a <span class="text--color"><strong>Frontend Software Engineer</strong></span> with a strong passion for building web applications that provide great user experiences. 
+                <br>
+                Here's a bit more <span class="text--color click" onclick="toggleModal()"><strong>about me.</strong></span></p>
+                <div class="social__list">
+                    <a href="https://www.linkedin.com/in/joseph-pellerin-iv/" target="_blank" class ="social__link click">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/JosephPellerin" target="_blank" class ="social__link click">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="./assets/Joseph Pellerin Resume.pdf" target="_blank" class ="social__link click">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+          </header>
+          <a href="#">
+          <button class="mail__btn fixed click" onclick="toggleModal()">
+              <i class="fas fa-envelope"></i>
+          </button>
+        </a>
+          <a href="#projects" class="scroll">
+              <div class="scroll__icon click"></div>
+          </a>
+          <div class="modal">
+              <div class="modal__half modal__about">
+                  <h3 class="modal__title modal__title-about">Here's a bit about me.</h3>
+                  <h4 class="modal__subtitle modal__subtitle-about">Frontend Software Developer
+                  </h4>
+                    <p class="modal__para">I'm a freelancing <b class="text--color">frontend software engineer</b>, focused on providing high quality user experience. I develop web applications using HTML5, CSS3, JavaScript ES6+, and React! I include <b class="text--color">responsive design</b> with multi-platform support that utilizes <b class="text--color">Search Engine Optimisation</b> and <b class="text--color">scalable BEM code</b>, along with other best practices. 
+                    <br>
+                    </p>
+                    <div class="modal__languages">
+                                <figure class="modal__language">
+                                    <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML Logo" />
+                                <span class="language__name">HTML</span>
+                                </figure>
+                                
+                                <figure class="modal__language">
+                                    <img class="modal__language--img"src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo"/>
+                                <span class="language__name">CSS</span>
+                                </figure>
+
+                                <figure class="modal__language">
+                                    <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo"/>
+                                <span class="language__name">JavaScript</span>
+                                </figure>
+
+                                <figure class="modal__language">
+                                    <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo"/>
+                                <span class="language__name">React</span>
+                                </figure>
+
+                                <figure class="modal__language">
+                                    <img class="modal__language--img" src="./assets/Visual_Studio_Code_1.35_icon.svg.png" alt="HTML Logo" />
+                                <span class="language__name">VS Code</span>
+                                </figure>
+
+                                <figure class="modal__language">
+                                    <img class="modal__language--img" src="./assets/Git-Icon.png" alt="HTML Logo" />
+                                <span class="language__name">Git</span>
+                                </figure>
+
+                                <figure class="modal__language">
+                                    <img class="modal__language--img" src="./assets/sass.png" alt="HTML Logo" />
+                                <span class="language__name">Sass</span>
+                                </figure>
+                                
+                                <figure class="modal__language">
+                                    <img class="modal__language--img" src="./assets/WordPress.png" alt="HTML Logo" />
+                                <span class="language__name">Word Press</span>
+                                </figure>
+                    </div>
+                </div>
+            <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+                  <h3 class="modal__title modal__title--contact">
+                    Send me a message!
+                    </h3>
+                    <h4 class="modal__subtitle modal__subtitle--contact">
+                    I'm currently looking for new opportunities!
+                    </h4>
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input" name="user_email" type="email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit"> Send it my way</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message, looking forward to speaking to you soon!
+                </div>
+            </div>
+          </div>
+          <img src="./assets/semi circle.svg" class="shape shape--0" alt="">
+          <img src="./assets/circle.svg" class="shape shape--1" alt="">
+          <img src="./assets/squiggly.svg" class="shape shape--2" alt="">
+          <img src="./assets/circle.svg" class="shape shape--3" alt="">
+          <img src="./assets/triangle.svg" class="shape shape--4" alt="">
+          <img src="./assets/circle.svg" class="shape shape--5" alt="">
+          <img src="./assets/squiggly.svg" class="shape shape--6" alt="">
+          <img src="./assets/circle.svg" class="shape shape--7" alt="">
+          <img src="./assets/semi circle.svg" class="shape shape--8" alt="">
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="text--color">projects</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project"></li>
+                    <div class="project__wrapper">
+                        <img src="assets/Eportfolio project 3.png" class="project__img" alt="">
+                        <div class="project__wrapper--bg">
+                        <div class="project__description">
+                            <h3 class="project__description--title">
+                                Library React App
+                            </h3>
+                            <h4 class="project__description--subtitle">
+                                React, HTML5, CSS3, JavaScript ES6+
+                            </h4>
+                            <p class="project__description--para">This Library React App was built to display my knowledge with using React. The goal of this app was to create a mock eCommerce & Library website where a customer could order books. There is no order function set in place, but feel free to look around and take note of the Skeleton Loading State, use of Route and Link, along with the cart functionality.
+                            </p>
+                            <div class="project__description--links">
+                                <a href="https://github.com/JosephPellerin/library-react-app/tree/main/library-react" target="_blank" class="project__description--link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://library-react-apps.herokuapp.com/" target="_blank" class="project__description--link">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        </div>  
+                    </div>
+                    <li class="project"></li>
+                    <div class="project__wrapper">
+                        <img src="assets/Eportfolio Project 2.png" class="project__img" alt="">
+                        <div class="project__wrapper--bg">
+                        <div class="project__description">
+                            <h3 class="project__description--title">
+                                Client ePortfolio
+                            </h3>
+                            <h4 class="project__description--subtitle">
+                                HTML5 & CSS3
+                            </h4>
+                            <p class="project__description--para">A simple, responsive, and elegantly designed ePortfolio project that uses scalable BEM code. Text data can be changed out to accomidate to new clients, making this a universal template for displaying previous works!
+                            </p>
+                            <div class="project__description--links">
+                                <a href="https://github.com/JosephPellerin/Client-ePortfolio" target="_blank" class="project__description--link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://josephpellerin.github.io/Client-ePortfolio/" target="_blank" class="project__description--link">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        </div>  
+                    </div>
+                    <li class="project"></li>
+                    <div class="project__wrapper">
+                        <img src="assets/Eportfolio Project 1.png" class="project__img" alt="">
+                        <div class="project__wrapper--bg">
+                        <div class="project__description">
+                            <h3 class="project__description--title">
+                                Task Tracker
+                            </h3>
+                            <h4 class="project__description--subtitle">
+                                React, HTML5, CSS3, JavaScript ES6+
+                            </h4>
+                            <p class="project__description--para">A simple task tracker that communicates with a server to store data inputed by the user. The app allows users to create, modify, and delete tasks as well as set a reminder. A simple yet effective application that has real world utility!
+                            </p>
+                            <div class="project__description--links">
+                                <a href="https://github.com/JosephPellerin/Task-Tracking-app" target="_blank" class="project__description--link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project__description--link" onclick="myalert()">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        </div>  
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row footer__row">
+            <a href="#" class="footer__anchor">
+                <figure class="footer__logo">
+                    <img src="./assets/logocut.png" class="footer__logo--img" alt="">
+                </figure>
+                <span class="footer__logo--popper">
+                    Top
+                    <i class="fas fa-arrow-up"></i>
+                </span>
+            </a>
+            <div class="footer__social--list">
+                <a href="https://github.com/JosephPellerin" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                " target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/joseph-pellerin-iv/" target="blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                " target="_blank">LinkedIn</a>
+                <a href="#" onclick="toggleModal()" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                " >Contact </a>
+                <a href="./assets/Joseph Pellerin Resume.pdf" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                " target="_blank">Resume</a>
+            </div>
+            <div class="footer__copyright">Copyright &copy 2021 Joseph Pellerin</div>
+        </div>
+    </footer>
+    <script>
+        function myalert() {
+            alert("Sorry, but this project is still pending upload! For now, head over to my GitHub and look at the source code!");
+        }
+    </script>
+</body>
+</html>
